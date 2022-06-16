@@ -25,7 +25,7 @@ the capability to work with grid files that are not installed on the local machi
 
 Available methods for download include:
 
-- `Mirroing the data <https://proj.org/usage/network.html#mirroring>`__:
+- `Mirroring the data <https://proj.org/usage/network.html#mirroring>`__:
 
   To download to PROJ user writable data directory:
 
@@ -33,13 +33,13 @@ Available methods for download include:
 
   .. code-block:: bash
 
-    export PROJ_DOWNLOAD_DIR=$(python -c "import pyproj; print(pyproj.datadir.get_user_data_dir())
+    export PROJ_DOWNLOAD_DIR=$(python -c "import pyproj; print(pyproj.datadir.get_user_data_dir())")
 
   To download to the main PROJ data data directory:
 
   .. code-block:: bash
 
-    export PROJ_DOWNLOAD_DIR=$(python -c "import pyproj; print(pyproj.datadir.get_data_dir())
+    export PROJ_DOWNLOAD_DIR=$(python -c "import pyproj; print(pyproj.datadir.get_data_dir())")
 
   Download the files:
 
